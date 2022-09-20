@@ -1,0 +1,10 @@
+{
+  "ignore": ["**/@(docs|test|perf)/**", "*.log"],
+  "watch": ["**/config/**", "packages/tools/**"],
+  "events": {},
+  "delay": "250",
+  "env": {
+    "NODE_ENV": "development",
+    "OCC_BUILDER": "esbuild"
+  }
+}
