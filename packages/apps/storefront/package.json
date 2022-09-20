@@ -4,6 +4,9 @@
   "private": true,
   "description": "Open Storefront Framework Application",
   "dependencies": {
+    "@chakra-ui/react": "^1.8.8",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
     "@oracle-cx-commerce/actions": "3.7.0",
     "@oracle-cx-commerce/commerce-utils": "3.7.0",
     "@oracle-cx-commerce/endpoints": "3.7.0",
@@ -11,10 +14,12 @@
     "@oracle-cx-commerce/react-components": "3.7.0",
     "@oracle-cx-commerce/react-widgets": "3.7.0",
     "@oracle-cx-commerce/styles": "3.7.0",
-    "@oracle-cx-commerce/subscribers": "3.7.0"
+    "@oracle-cx-commerce/subscribers": "3.7.0",
+    "framer-motion": "^7.3.6"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",
+    "@chakra-ui/storybook-addon": "^4.0.11",
     "@oracle-cx-commerce/rollup-config": "3.7.0",
     "@storybook/addon-actions": "^6.5.9",
     "@storybook/addon-essentials": "^6.5.9",
@@ -31,8 +36,7 @@
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-prettier": "^4.2.1",
     "replace-in-file": "^6.3.5",
-    "rollup-plugin-typescript2": "^0.32.1",
-    "tailwindcss": "^3.1.6"
+    "rollup-plugin-typescript2": "^0.32.1"
   },
   "occ": {
     "namespace": "occ.react",
@@ -53,7 +57,6 @@
     }
   },
   "scripts": {
-    "tailwind": "tailwindcss -i tailwind.css -o public/styles/tailwind.css",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   }

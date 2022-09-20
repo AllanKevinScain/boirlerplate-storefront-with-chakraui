@@ -1,9 +1,7 @@
 module.exports = {
-  stories: [
-    '../src/**/*.stories.mdx',
-    '../src/**/*.stories.@(js|jsx|ts|tsx)'
-  ],
+  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
+    '@chakra-ui/storybook-addon',
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
@@ -11,10 +9,10 @@ module.exports = {
       name: '@storybook/addon-postcss',
       options: {
         postcssLoaderOptions: {
-          implementation: require('postcss'),
-        },
-      },
-    },
+          implementation: require('postcss')
+        }
+      }
+    }
   ],
   staticDirs: [
     {
@@ -22,5 +20,8 @@ module.exports = {
       to: '/occ-public'
     }
   ],
-  framework: '@storybook/react'
-}
+  framework: '@storybook/react',
+  features: {
+    emotionAlias: false
+  }
+};
