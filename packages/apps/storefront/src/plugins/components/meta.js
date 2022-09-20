@@ -4,5 +4,5 @@
 
 export * from '@oracle-cx-commerce/react-widgets/meta';
 
-export { default as HelloWorld } from './hello-world/meta';
-export { default as HtmlContent } from './html-content/meta';
+export { default as HelloWorld } from './storeComponents/hello-world/meta';
+export { default as HtmlContent } from './storeWidgets/html-content/meta';
