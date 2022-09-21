@@ -56,3 +56,45 @@ Dependências externas devem ser instaladas na pasta do aplicativo, dentro de **
 - `yarn storybook`: Abre o catálogo de componentes.
 - `yarn dev`: Inicia o servidor de aplicação de desenvolvimento.
 - `yarn deploy`: Implanta o aplicativo no servidor remoto.
+
+### ESLINT/PRETTIER CONFIGS
+
+No arquivo `settings.json` do VSCode coloque:
+
+```js
+  "eslint.enable": true,
+  "editor.codeActionsOnSave": {
+  "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript", "typescript"],
+  "material-icon-theme.folders.associations": {
+    "eslint-config": "tools",
+  },
+  "files.associations": {
+    ".prettierrc": "json",
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveshare.connectionMode": "relay",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
+```
+
+ps: documentação criada por @MarlonConstant
