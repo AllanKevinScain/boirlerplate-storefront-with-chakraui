@@ -1,9 +1,7 @@
 {
   "layout": [
     {
-      "components": [
-        "_HelloWorld"
-      ],
+      "components": ["_Header"],
       "width": 12,
       "type": "main"
     }
@@ -11,14 +9,14 @@
   "settings": {
     "pageDisplayName": {
       "en": {
-        "pageDisplayName": "Hello World - Help Page"
+        "pageDisplayName": "Help Page"
       }
     }
   },
   "defaultPage": true,
   "address": "help",
   "allowCustomAddress": true,
-  "title": "Hello World - Help Page",
+  "title": "Help Page",
   "shortName": "Article",
   "pageTypeDisplayName": {
     "en": {

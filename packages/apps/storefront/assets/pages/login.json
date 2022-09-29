@@ -1,9 +1,7 @@
 {
   "layout": [
     {
-      "components": [
-        "_HelloWorld"
-      ],
+      "components": ["_Header"],
       "width": 12,
       "type": "main"
     }
@@ -11,13 +9,13 @@
   "settings": {
     "pageDisplayName": {
       "en": {
-        "pageDisplayName": "Hello World - Login Page"
+        "pageDisplayName": "Login Page"
       }
     }
   },
   "defaultPage": true,
   "address": "login",
-  "title": "Hello World - Login Page",
+  "title": "Login Page",
   "shortName": "login",
   "pageTypeDisplayName": {
     "en": {

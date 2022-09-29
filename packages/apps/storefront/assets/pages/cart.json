@@ -1,9 +1,7 @@
 {
   "layout": [
     {
-      "components": [
-        "_HelloWorld"
-      ],
+      "components": ["_Header"],
       "width": 12,
       "type": "main"
     }
@@ -11,13 +9,13 @@
   "settings": {
     "pageDisplayName": {
       "en": {
-        "pageDisplayName": "Hello World - Cart Page"
+        "pageDisplayName": "Cart Page"
       }
     }
   },
   "defaultPage": true,
   "address": "cart",
-  "title": "Hello World - Cart Page",
+  "title": "Cart Page",
   "shortName": "cart",
   "pageTypeDisplayName": {
     "en": {

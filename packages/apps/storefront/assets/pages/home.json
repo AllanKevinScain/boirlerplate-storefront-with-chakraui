@@ -1,10 +1,7 @@
 {
   "layout": [
     {
-      "components": [
-        "_HelloWorld",
-        "_HtmlContent"
-      ],
+      "components": ["_Header"],
       "width": 12,
       "type": "main"
     }
@@ -12,13 +9,13 @@
   "settings": {
     "pageDisplayName": {
       "en": {
-        "pageDisplayName": "Hello World - Homepage"
+        "pageDisplayName": "Homepage"
       }
     }
   },
   "defaultPage": true,
   "address": "home",
-  "title": "Hello World - Homepage",
+  "title": "Homepage",
   "shortName": "home",
   "pageTypeDisplayName": {
     "en": {
