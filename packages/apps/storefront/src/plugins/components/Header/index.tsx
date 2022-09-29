@@ -1,6 +1,6 @@
 import React from 'react';
 import { HeaderInterface } from '@plugins/interfaces';
-import { StyledHeader } from './header';
+import { StyledHeader } from './style-header';
 
 const Header: React.FC<HeaderInterface> = props => {
   return <StyledHeader {...props} />;

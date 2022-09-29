@@ -1,7 +1,7 @@
 import React from 'react';
 import { Center, Divider, Heading, Image, Stack } from '@chakra-ui/react';
+import { SvgImage } from '@plugins/components/Archives';
 import { HeaderProperties } from '@plugins/interfaces';
-import { SvgImage } from '../../Archives';
 
 export const CartHeader: React.FC<HeaderProperties> = props => {
   const {

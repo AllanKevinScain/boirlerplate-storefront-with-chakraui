@@ -1,0 +1,13 @@
+import React from 'react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import {{widgetName}} from '.';
+
+const Template: ComponentStory<typeof {{widgetName}}> = args => <{{widgetName}} {...args} />;
+
+export const Default = Template.bind({});
+
+export default {
+  title: 'widgets/{{widgetName}}',
+  component: {{widgetName}},
+  args: []
+} as ComponentMeta<typeof {{widgetName}}>;

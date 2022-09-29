@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Header } from '.';
+import Header from '.';
 
 const Template: ComponentStory<typeof Header> = args => <Header {...args} />;
 
