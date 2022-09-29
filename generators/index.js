@@ -1,7 +1,12 @@
 /*
  ** Copyright (c) 2022 Oracle and/or its affiliates.
  */
+
 /* eslint-disable no-undef */
+/* eslint-disable prettier/prettier */
+
+const { addArchive, updateArchive } = require('./actions');
+
 const config = plop => {
   plop.setGenerator('post', {
     description: 'Gerador de codigos',
@@ -13,45 +18,13 @@ const config = plop => {
       }
     ],
     actions: [
-      {
-        type: 'add',
-        path: '../packages/apps/storefront/src/plugins/components/{{widgetName}}/index.tsx',
-        templateFile: './templates/index.hbs'
-      },
-      {
-        type: 'add',
-        path: '../packages/apps/storefront/src/plugins/components/{{widgetName}}/config.js',
-        templateFile: './templates/config.hbs'
-      },
-      {
-        type: 'add',
-        path: '../packages/apps/storefront/src/plugins/components/{{widgetName}}/meta.js',
-        templateFile: './templates/meta.hbs'
-      },
-      {
-        type: 'add',
-        path: '../packages/apps/storefront/assets/components/_{{widgetName}}/index.json',
-        templateFile: './templates/indexj.hbs'
-      },
-      {
-        type: 'add',
-        path: '../packages/apps/storefront/assets/components/_{{widgetName}}/config.json',
-        templateFile: './templates/configj.hbs'
-      },
-      {
-        type: 'append',
-        path: '../packages/apps/storefront/src/plugins/components/index.js',
-        separator: '\n',
-        pattern: `/* Flag para o plop */`,
-        template: `export const {{widgetName}} = () => import('./{{widgetName}}');`
-      },
-      {
-        type: 'append',
-        path: '../packages/apps/storefront/src/plugins/components/meta.js',
-        separator: '\n',
-        pattern: `/* Flag para o plop */`,
-        template: `export { default as {{widgetName}} } from './{{widgetName}}/meta';`
-      }
+      addArchive('src/plugins/components/{{widgetName}}/index.tsx', 'index'),
+      addArchive('src/plugins/components/{{widgetName}}/config.js', 'config'),
+      addArchive('src/plugins/components/{{widgetName}}/meta.js', 'meta'),
+      addArchive('assets/components/_{{widgetName}}/index.json', 'indexj'),
+      addArchive('assets/components/_{{widgetName}}/config.json', 'configj'),
+      updateArchive('index.js', false),
+      updateArchive('meta.js', true)
     ]
   });
 };
