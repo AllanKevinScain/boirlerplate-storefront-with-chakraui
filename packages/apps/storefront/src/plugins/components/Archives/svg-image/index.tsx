@@ -2,7 +2,7 @@ import React from 'react';
 import { Box } from '@chakra-ui/react';
 import { SvgImageInterface } from '@plugins/interfaces';
 
-export const SvgImage: React.FC<SvgImageInterface> = props => {
+const SvgImage: React.FC<SvgImageInterface> = props => {
   const { color, sizeX, sizeY, src } = props;
 
   return (
@@ -16,3 +16,5 @@ export const SvgImage: React.FC<SvgImageInterface> = props => {
     />
   );
 };
+
+export default SvgImage;

@@ -12,8 +12,8 @@ module.exports = {
     return { type: 'add', path, templateFile };
   },
   updateArchive: (archiveWillGenrate, meta) => {
-    const indexTemplate = `export const {{widgetName}} = () => import('./{{widgetName}}');`;
-    const metaTemplate = `export { default as {{widgetName}} } from './{{widgetName}}/meta';`;
+    const indexTemplate = `export const {{camelizer widgetName}} = () => import('./{{kebabler widgetName}}');`;
+    const metaTemplate = `export { default as {{camelizer widgetName}} } from './{{kebabler widgetName}}/meta';`;
 
     const path = `../packages/apps/storefront/src/plugins/components/${archiveWillGenrate}`;
     const template = meta ? metaTemplate : indexTemplate;

@@ -52,7 +52,7 @@
     "prepare": "husky install",
     "storybook": "yarn --cwd packages/apps/storefront storybook",
     "build-storybook": "yarn --cwd packages/apps/storefront build-storybook",
-    "gen": "plop --plopfile=generators/index.js"
+    "gen": "plop --plopfile=generators/index.js & yarn eslint --fix ."
   },
   "dependencies": {
     "@oracle-cx-commerce/cli": "3.7.0"

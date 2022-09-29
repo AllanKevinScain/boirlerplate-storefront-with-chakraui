@@ -1,9 +1,8 @@
 import React from 'react';
-import { HeaderInterface } from '@plugins/interfaces';
-import { StyledHeader } from './style-header';
+import { Box } from '@chakra-ui/react';
 
-const Header: React.FC<HeaderInterface> = props => {
-  return <StyledHeader {...props} />;
+const Header: React.FC = () => {
+  return <Box>Ola mundo</Box>;
 };
 
 export default Header;

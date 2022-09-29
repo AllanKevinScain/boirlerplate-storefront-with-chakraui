@@ -4,18 +4,10 @@ import Header from '.';
 
 const Template: ComponentStory<typeof Header> = args => <Header {...args} />;
 
-export const Cart = Template.bind({});
-Cart.args = {
-  headerType: 'cart',
-  logoContent: 'logo.svg',
-  logoIsVisible: true,
-  contentTitle: 'Carrinho',
-  securyImagesContent: ['secury_armored.png', 'secury_google.png'],
-  securyImagesIsVisible: true,
-  titleIsVisible: true
-};
+export const Default = Template.bind({});
 
 export default {
   title: 'widgets/Header',
-  component: Header
+  component: Header,
+  args: []
 } as ComponentMeta<typeof Header>;

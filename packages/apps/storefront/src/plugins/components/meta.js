@@ -3,5 +3,5 @@
  */
 
 /* Flag para o plop */
-export { default as Header } from './Header/meta';
+export { default as Header } from './header/meta';
 export * from '@oracle-cx-commerce/react-widgets/meta';
