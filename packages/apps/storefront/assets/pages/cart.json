@@ -1,7 +1,7 @@
 {
   "layout": [
     {
-      "components": ["_Header"],
+      "components": ["_Componentes"],
       "width": 12,
       "type": "main"
     }

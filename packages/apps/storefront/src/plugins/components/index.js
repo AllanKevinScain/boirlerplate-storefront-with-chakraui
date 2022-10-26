@@ -4,4 +4,4 @@
 
 export * from '@oracle-cx-commerce/react-widgets';
 /* Flag para o plop */
-export const Header = () => import('./header');
+export const Componentes = () => import('./componentes-de-teste');

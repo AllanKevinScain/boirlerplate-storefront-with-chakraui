@@ -40,7 +40,8 @@ module.exports = {
         ts: 'never',
         tsx: 'never'
       }
-    ]
+    ],
+    'jsx-a11y/anchor-is-valid': 'off'
   },
   env: {
     node: true

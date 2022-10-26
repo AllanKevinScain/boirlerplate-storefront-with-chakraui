@@ -1,6 +1,8 @@
 export default {
   black: '#000',
+  blackRGB: 'rgba(0,0,0,0.5)',
   white: '#FFF',
+  bgNagem: '#F1F5F9',
   blackAlpha: {
     50: '#f5f5f5',
     100: '#f0f0f0',
@@ -20,7 +22,7 @@ export default {
     300: '#cbd5e0',
     400: '#a0aec0',
     500: '#718096',
-    600: '#4a5568',
+    600: '#4a5567',
     700: '#2d3748',
     800: '#1a202c',
     900: '#171923'
@@ -42,6 +44,7 @@ export default {
     100: '#feebcb',
     200: '#fbd38d',
     300: '#f6ad55',
+    350: '#FBC409',
     400: '#ed8936',
     500: '#dd6b20',
     600: '#eb780f',
@@ -79,8 +82,8 @@ export default {
     200: '#81e6d9',
     300: '#4fd1c5',
     400: '#38b2ac',
-    500: '#319795',
-    600: '#00cda5',
+    500: '#00cda5', // as cores estão repetidas devido o chakra, "coloScheme"
+    600: '#00cda5', // as cores estão repetidas devido o chakra, "coloScheme"
     700: '#285e61',
     800: '#234e52',
     900: '#1d4044'
@@ -91,11 +94,12 @@ export default {
     200: '#90cdf4',
     300: '#63b3ed',
     400: '#4299e1',
-    500: '#3182ce',
+    500: '#0046b4',
     600: '#0046b4',
     700: '#2c5282',
     800: '#2a4365',
-    900: '#1a365d'
+    900: '#1a365d',
+    1000: '#013588'
   },
   cyan: {
     50: '#edfdfd',
@@ -115,7 +119,7 @@ export default {
     200: '#d6bcfa',
     300: '#b794f4',
     400: '#9f7aea',
-    500: '#805ad5',
+    500: '#9900cc',
     600: '#9900cc',
     700: '#553c9a',
     800: '#44337a',

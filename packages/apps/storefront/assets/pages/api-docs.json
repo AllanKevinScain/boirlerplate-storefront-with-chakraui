@@ -1,10 +1,7 @@
 {
   "layout": [
     {
-      "components": [
-        "progress-bar",
-        "Visualizer"
-      ],
+      "components": [],
       "width": 12,
       "type": "main"
     }
