@@ -1,9 +1,10 @@
 import React from 'react';
-import { Box, Button, Text } from '@chakra-ui/react';
+import { Button, Text } from '@chakra-ui/react';
+import { Stack } from '../Archives';
 
 const ComponentesChakra: React.FC = () => {
   return (
-    <Box>
+    <Stack flexDir="column">
       <Button variant="ghost">ghost button</Button>
       <Button variant="solid">solid button</Button>
       <Button variant="underline">underline button</Button>
@@ -12,7 +13,7 @@ const ComponentesChakra: React.FC = () => {
       <Text variant="md">md Text</Text>
       <Text variant="lg">lg Text</Text>
       <Text variant="xl">xl Text</Text>
-    </Box>
+    </Stack>
   );
 };
 

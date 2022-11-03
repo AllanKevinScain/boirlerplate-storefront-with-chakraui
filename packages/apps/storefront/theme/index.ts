@@ -1,20 +1,22 @@
 import { extendTheme } from '@chakra-ui/react';
-import colors from './colors';
-import fonts from './fonts';
-import sizes from './sizes';
-import components from './components';
+import { colors, fonts, sizes, styles } from './foundations';
+import { Button } from './components/button';
+import { Link } from './components/link';
+import { Text } from './components/text';
+import { Checkbox } from './components/checkbox';
+import { Stack } from './components/stack';
 
 export const theme = extendTheme({
-  styles: {
-    global: {
-      '*[data-focus]': {
-        boxShadow: 'none !important'
-      }
-    }
-  },
+  styles,
   colors,
   sizes,
   space: sizes,
-  ...components,
-  ...fonts
+  ...fonts,
+  components: {
+    Button,
+    Link,
+    Text,
+    Checkbox,
+    Stack
+  }
 });

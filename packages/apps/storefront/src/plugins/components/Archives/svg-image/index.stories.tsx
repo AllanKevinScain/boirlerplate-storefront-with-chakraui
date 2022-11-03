@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import SvgImage from '.';
+import { SvgImage } from '.';
 
 const Template: ComponentStory<typeof SvgImage> = args => <SvgImage {...args} />;
 
