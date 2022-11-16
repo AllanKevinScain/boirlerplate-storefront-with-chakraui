@@ -5,7 +5,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable prettier/prettier */
 const inquirer = require('inquirer');
-const { addArchive, updateArchive } = require('./actions');
+const { addArchive, updateArchive, updateTypes } = require('./actions');
 const { setLowerCase, setCamelize, setKebabler } = require('./helpers');
 
 const config = plop =>
