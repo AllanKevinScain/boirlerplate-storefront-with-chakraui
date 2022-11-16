@@ -8,11 +8,15 @@ module.exports = {
       return str.toLowerCase();
     }),
   setCamelize: plop =>
-    plop.setHelper('camelizer', str =>
-      str.replace(/\W+(.)/g, function (_, chr) {
+    plop.setHelper('camelizer', str => {
+      let string = str.replace(/\W+(.)/g, (_, chr) => {
         return chr.toUpperCase();
-      })
-    ),
+      });
+
+      string = string[0].toUpperCase() + string.substring(1);
+
+      return string;
+    }),
   setKebabler: plop =>
     plop.setHelper('kebabler', str =>
       str

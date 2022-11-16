@@ -38,6 +38,7 @@ const config = plop =>
               'stories'
             ),
             addArchive('src/plugins/types/{{kebabler widgetName}}.type.ts', 'type'),
+            updateTypes(),
             addArchive('assets/components/_{{camelizer widgetName}}/index.json', 'indexj'),
             addArchive('assets/components/_{{camelizer widgetName}}/config.json', 'configj'),
             updateArchive('index.js', false),

@@ -15,9 +15,17 @@ module.exports = {
     const indexTemplate = `export const {{camelizer widgetName}} = () => import('./{{kebabler widgetName}}');`;
     const metaTemplate = `export { default as {{camelizer widgetName}} } from './{{kebabler widgetName}}/meta';`;
 
-    const path = `../packages/apps/storefront/src/plugins/components/${archiveWillGenrate}`;
+    const path = `../packages/apps/storefront/src/plugins/react-widgets/${archiveWillGenrate}`;
     const template = meta ? metaTemplate : indexTemplate;
 
     return { type: 'append', pattern: '/* Flag para o plop */', path, template };
+  },
+  updateTypes: () => {
+    return {
+      type: 'append',
+      pattern: '/* Flag para o plop */',
+      path: `../packages/apps/storefront/src/plugins/types/index.ts`,
+      template: `export * from './{{kebabler widgetName}}.type.ts';`
+    };
   }
 };
