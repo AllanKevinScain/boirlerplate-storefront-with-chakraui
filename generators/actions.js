@@ -12,8 +12,8 @@ module.exports = {
     return { type: 'add', path, templateFile };
   },
   updateArchive: (archiveWillGenrate, meta) => {
-    const indexTemplate = `export const {{camelizer widgetName}} = () => import('./{{kebabler widgetName}}');`;
-    const metaTemplate = `export { default as {{camelizer widgetName}} } from './{{kebabler widgetName}}/meta';`;
+    const indexTemplate = `export const {{camelizer componentName}} = () => import('./{{kebabler componentName}}');`;
+    const metaTemplate = `export { default as {{camelizer componentName}} } from './{{kebabler componentName}}/meta';`;
 
     const path = `../packages/apps/storefront/src/plugins/react-widgets/${archiveWillGenrate}`;
     const template = meta ? metaTemplate : indexTemplate;
@@ -25,7 +25,15 @@ module.exports = {
       type: 'append',
       pattern: '/* Flag para o plop */',
       path: `../packages/apps/storefront/src/plugins/types/index.ts`,
-      template: `export * from './{{kebabler widgetName}}.type';`
+      template: `export * from './{{kebabler componentName}}.type';`
+    };
+  },
+  updateIndexComponent: () => {
+    return {
+      type: 'append',
+      pattern: '/* Flag para o plop */',
+      path: `../packages/apps/storefront/src/plugins/react-components/index.ts`,
+      template: `export * from './{{kebabler componentName}}';`
     };
   }
 };

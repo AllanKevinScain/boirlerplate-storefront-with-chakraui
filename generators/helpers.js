@@ -18,10 +18,10 @@ module.exports = {
       return string;
     }),
   setKebabler: plop =>
-    plop.setHelper('kebabler', str =>
-      str
+    plop.setHelper('kebabler', str => {
+      return str
         .replace(/([a-z])([A-Z])/g, '$1-$2')
         .replace(/[\s_]+/g, '-')
-        .toLowerCase()
-    )
+        .toLowerCase();
+    })
 };

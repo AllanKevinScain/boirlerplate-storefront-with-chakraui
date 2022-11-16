@@ -5,7 +5,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable prettier/prettier */
 const inquirer = require('inquirer');
-const { addArchive, updateArchive, updateTypes } = require('./actions');
+const { addArchive, updateArchive, updateTypes, updateIndexComponent } = require('./actions');
 const { setLowerCase, setCamelize, setKebabler } = require('./helpers');
 
 const config = plop =>
@@ -19,55 +19,57 @@ const config = plop =>
       }
     ])
     .then(answers => {
+      setLowerCase(plop);
+      setKebabler(plop);
+      setCamelize(plop);
+      if (answers.gerador === 'component')
+        plop.setGenerator('post', {
+          description: 'Gerar um componente',
+          prompts: [
+            {
+              type: 'input',
+              name: 'componentName',
+              message: 'Nome do seu componente:'
+            }
+          ],
+          actions: [
+            addArchive('src/plugins/react-components/{{kebabler componentName}}/index.tsx', 'index'),
+            addArchive(
+              'src/plugins/react-components/{{kebabler componentName}}/{{kebabler componentName}}.stories.tsx',
+              'stories'
+            ),
+            addArchive('src/plugins/types/{{kebabler componentName}}.type.ts', 'type'),
+            updateTypes(),
+            updateIndexComponent()
+          ]
+        });
+
       if (answers.gerador === 'widget')
         plop.setGenerator('post', {
           description: 'Gerar um widget',
           prompts: [
             {
               type: 'input',
-              name: 'widgetName',
+              name: 'componentName',
               message: 'Nome do seu widget:'
             }
           ],
           actions: [
-            addArchive('src/plugins/react-widgets/{{kebabler widgetName}}/index.tsx', 'index'),
-            addArchive('src/plugins/react-widgets/{{kebabler widgetName}}/config.js', 'config'),
-            addArchive('src/plugins/react-widgets/{{kebabler widgetName}}/meta.js', 'meta'),
+            addArchive('src/plugins/react-widgets/{{kebabler componentName}}/index.tsx', 'index'),
+            addArchive('src/plugins/react-widgets/{{kebabler componentName}}/config.js', 'config'),
+            addArchive('src/plugins/react-widgets/{{kebabler componentName}}/meta.js', 'meta'),
             addArchive(
-              'src/plugins/react-widgets/{{kebabler widgetName}}/{{kebabler widgetName}}.stories.tsx',
+              'src/plugins/react-widgets/{{kebabler componentName}}/{{kebabler componentName}}.stories.tsx',
               'stories'
             ),
-            addArchive('src/plugins/types/{{kebabler widgetName}}.type.ts', 'type'),
+            addArchive('src/plugins/types/{{kebabler componentName}}.type.ts', 'type'),
             updateTypes(),
-            addArchive('assets/components/_{{camelizer widgetName}}/index.json', 'indexj'),
-            addArchive('assets/components/_{{camelizer widgetName}}/config.json', 'configj'),
+            addArchive('assets/components/_{{camelizer componentName}}/index.json', 'indexj'),
+            addArchive('assets/components/_{{camelizer componentName}}/config.json', 'configj'),
             updateArchive('index.js', false),
             updateArchive('meta.js', true)
           ]
         });
-
-      if (answers.gerador === 'component')
-        plop.setGenerator('post', {
-          description: 'Gerar um component',
-          prompts: [
-            {
-              type: 'input',
-              name: 'componentName',
-              message: 'Nome do seu component:'
-            }
-          ],
-          actions: [
-            addArchive('src/plugins/react-components/{{kebabler widgetName}}/index.tsx', 'index'),
-            addArchive(
-              'src/plugins/react-components/{{kebabler widgetName}}/{{kebabler widgetName}}.stories.tsx',
-              'stories'
-            )
-          ]
-        });
-
-      setLowerCase(plop);
-      setKebabler(plop);
-      setCamelize(plop);
     });
 
 module.exports = config;
