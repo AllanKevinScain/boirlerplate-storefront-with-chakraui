@@ -4,7 +4,7 @@
 
 import { createClient } from '@oracle-cx-commerce/react-app/client';
 import * as actions from './plugins/actions';
-import * as components from './plugins/components';
+import * as components from './plugins/react-widgets';
 import * as endpoints from './plugins/endpoints';
 import * as subscribers from './plugins/subscribers';
 

@@ -30,10 +30,14 @@ const config = plop =>
             }
           ],
           actions: [
-            addArchive('src/plugins/components/{{kebabler widgetName}}/index.tsx', 'index'),
-            addArchive('src/plugins/components/{{kebabler widgetName}}/config.js', 'config'),
-            addArchive('src/plugins/components/{{kebabler widgetName}}/meta.js', 'meta'),
-            addArchive('src/plugins/components/{{kebabler widgetName}}/index.stories.tsx', 'stories'),
+            addArchive('src/plugins/react-widgets/{{kebabler widgetName}}/index.tsx', 'index'),
+            addArchive('src/plugins/react-widgets/{{kebabler widgetName}}/config.js', 'config'),
+            addArchive('src/plugins/react-widgets/{{kebabler widgetName}}/meta.js', 'meta'),
+            addArchive(
+              'src/plugins/react-widgets/{{kebabler widgetName}}/{{kebabler widgetName}}.stories.tsx',
+              'stories'
+            ),
+            addArchive('src/plugins/types/{{kebabler widgetName}}.type.ts', 'type'),
             addArchive('assets/components/_{{camelizer widgetName}}/index.json', 'indexj'),
             addArchive('assets/components/_{{camelizer widgetName}}/config.json', 'configj'),
             updateArchive('index.js', false),
@@ -52,8 +56,11 @@ const config = plop =>
             }
           ],
           actions: [
-            addArchive('src/plugins/components/Archives/{{kebabler widgetName}}/index.tsx', 'index'),
-            addArchive('src/plugins/components/Archives/{{kebabler widgetName}}/index.stories.tsx', 'stories')
+            addArchive('src/plugins/react-components/{{kebabler widgetName}}/index.tsx', 'index'),
+            addArchive(
+              'src/plugins/react-components/{{kebabler widgetName}}/{{kebabler widgetName}}.stories.tsx',
+              'stories'
+            )
           ]
         });
 

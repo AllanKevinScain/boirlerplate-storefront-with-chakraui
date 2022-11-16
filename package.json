@@ -11,7 +11,7 @@
     "prebuild:prod": "node packages/apps/storefront/prebuilder.js",
     "prebuild": "node packages/apps/storefront/prebuilder.js",
     "build:prod": "occ build --production",
-    "build": "occ build --watch",
+    "build": "cross-env LIMIT=14336 increase-memory-limit && yarn build",
     "predev": "node packages/apps/storefront/prebuilder.js",
     "dev": "nodemon --config nodemon-dev.json --inspect node_modules/@oracle-cx-commerce/cli/cli.js serve",
     "test:int": "node --unhandled-rejections=warn node_modules/jest/bin/jest.js -c jest.config.int.js",
