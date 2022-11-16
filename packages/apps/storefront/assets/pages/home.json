@@ -1,7 +1,7 @@
 {
   "layout": [
     {
-      "components": [],
+      "components": ["_WidgetTeste"],
       "width": 12,
       "type": "main"
     }

@@ -4,3 +4,4 @@
 
 export * from '@oracle-cx-commerce/react-widgets';
 /* Flag para o plop */
+export const WidgetTeste = () => import('./widget-teste');

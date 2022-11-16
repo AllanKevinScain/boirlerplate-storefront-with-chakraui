@@ -25,7 +25,7 @@ module.exports = {
       type: 'append',
       pattern: '/* Flag para o plop */',
       path: `../packages/apps/storefront/src/plugins/types/index.ts`,
-      template: `export * from './{{kebabler widgetName}}.type.ts';`
+      template: `export * from './{{kebabler widgetName}}.type';`
     };
   }
 };
