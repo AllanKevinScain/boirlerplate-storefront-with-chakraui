@@ -60,6 +60,10 @@ const config = plop =>
             addArchive('src/plugins/react-widgets/{{kebabler componentName}}/meta.js', 'meta'),
             addArchive('src/plugins/types/{{kebabler componentName}}.type.ts', 'type'),
             updateTypes(),
+            addArchive(
+              'src/plugins/react-widgets/{{kebabler componentName}}/{{kebabler componentName}}.stories.tsx',
+              'stories'
+            ),
             addArchive('assets/components/_{{camelizer componentName}}/index.json', 'indexj'),
             addArchive('assets/components/_{{camelizer componentName}}/config.json', 'configj'),
             updateArchive('index.js', false),
