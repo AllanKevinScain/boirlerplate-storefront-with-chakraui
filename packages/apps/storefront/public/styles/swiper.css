@@ -1,3 +1,4 @@
+/* stylelint-disable */
 /**
  * Swiper 6.5.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -19,6 +20,7 @@
 }
 :root {
   --swiper-theme-color: #eb6743;
+  --swiper-navigation-size: 44px;
 }
 .swiper-container {
   margin-left: auto;
@@ -133,9 +135,7 @@
 .swiper-container-vertical.swiper-container-css-mode > .swiper-wrapper {
   scroll-snap-type: y mandatory;
 }
-:root {
-  --swiper-navigation-size: 44px;
-}
+
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
@@ -162,7 +162,6 @@
   font-size: var(--swiper-navigation-size);
   text-transform: none !important;
   letter-spacing: 0;
-  text-transform: none;
   font-variant: initial;
   line-height: 1;
 }
