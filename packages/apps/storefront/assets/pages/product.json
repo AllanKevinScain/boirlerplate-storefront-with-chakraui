@@ -1,25 +1,25 @@
 {
   "layout": [
     {
-      "components": [],
+      "components": ["_Header"],
       "width": 12,
       "type": "main"
     }
   ],
   "settings": {
     "pageDisplayName": {
-      "en": {
+      "pt-BR": {
         "pageDisplayName": "Product Page"
+      }
+    },
+    "pageTitle": {
+      "pt-BR": {
+        "pageTitle": "Product Page"
       }
     }
   },
   "defaultPage": true,
   "address": "product",
   "title": "Product Page",
-  "shortName": "product",
-  "pageTypeDisplayName": {
-    "en": {
-      "pageTypeDisplayName": "product"
-    }
-  }
+  "shortName": "product"
 }

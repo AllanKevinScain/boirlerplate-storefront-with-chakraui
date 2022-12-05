@@ -3,8 +3,9 @@ import { ComponentStyleConfig } from '@chakra-ui/react';
 export const Button: ComponentStyleConfig = {
   baseStyle: {
     _focus: { boxShadow: 'none' },
-    _hover: { opacity: '0.8 !important' },
-    transition: 'all 0.3s !important'
+    _hover: { opacity: '0.7 !important' },
+    transition: 'all 0.3s !important',
+    borderRadius: 'md'
   },
   variants: {
     ghost: {

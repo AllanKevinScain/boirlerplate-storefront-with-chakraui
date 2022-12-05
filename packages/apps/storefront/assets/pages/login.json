@@ -1,25 +1,25 @@
 {
   "layout": [
     {
-      "components": [],
+      "components": ["_Header"],
       "width": 12,
       "type": "main"
     }
   ],
   "settings": {
     "pageDisplayName": {
-      "en": {
+      "pt-BR": {
         "pageDisplayName": "Login Page"
+      }
+    },
+    "pageTitle": {
+      "pt-BR": {
+        "pageTitle": "Login Page"
       }
     }
   },
   "defaultPage": true,
   "address": "login",
   "title": "Login Page",
-  "shortName": "login",
-  "pageTypeDisplayName": {
-    "en": {
-      "pageTypeDisplayName": "login"
-    }
-  }
+  "shortName": "login"
 }

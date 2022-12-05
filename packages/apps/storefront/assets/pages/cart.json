@@ -1,25 +1,25 @@
 {
   "layout": [
     {
-      "components": [],
+      "components": ["_CartHeader"],
       "width": 12,
       "type": "main"
     }
   ],
   "settings": {
     "pageDisplayName": {
-      "en": {
+      "pt-BR": {
         "pageDisplayName": "Cart Page"
+      }
+    },
+    "pageTitle": {
+      "pt-BR": {
+        "pageTitle": "Cart Page"
       }
     }
   },
   "defaultPage": true,
   "address": "cart",
   "title": "Cart Page",
-  "shortName": "cart",
-  "pageTypeDisplayName": {
-    "en": {
-      "pageTypeDisplayName": "cart"
-    }
-  }
+  "shortName": "cart"
 }

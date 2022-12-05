@@ -1,25 +1,25 @@
 {
   "layout": [
     {
-      "components": [],
+      "components": ["_Header"],
       "width": 12,
       "type": "main"
     }
   ],
   "settings": {
     "pageDisplayName": {
-      "en": {
+      "pt-BR": {
         "pageDisplayName": "Registration Page"
+      }
+    },
+    "pageTitle": {
+      "pt-BR": {
+        "pageTitle": "Registration Page"
       }
     }
   },
   "defaultPage": true,
   "address": "registration",
   "title": "Registration Page",
-  "shortName": "registration",
-  "pageTypeDisplayName": {
-    "en": {
-      "pageTypeDisplayName": "registration"
-    }
-  }
+  "shortName": "registration"
 }

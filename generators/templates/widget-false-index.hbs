@@ -1,0 +1,9 @@
+import React from 'react';
+import { Box } from '@chakra-ui/react';
+import { {{camelizer componentName}}Props } from '@plugins/types';
+
+export const {{camelizer componentName}}Widget: React.FC<{{camelizer componentName}}Props> = props => {
+  const { id = '' } = props;
+
+  return <Box id={id}>Ola mundo</Box>;
+};

@@ -1,13 +1,14 @@
 import React from 'react';
 import Component, { fetchers as defaultFetchers } from '@oracle-cx-commerce/react-widgets/root/component';
 import { ChakraProvider } from '@chakra-ui/react';
+import { theme } from '@storefront/theme';
 
 /**
  * Root component.
  */
 const Root = props => {
   return (
-    <ChakraProvider resetCSS>
+    <ChakraProvider resetCSS theme={theme}>
       <Component {...props} />
     </ChakraProvider>
   );

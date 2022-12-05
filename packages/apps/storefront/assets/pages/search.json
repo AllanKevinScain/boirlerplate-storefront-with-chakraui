@@ -1,25 +1,25 @@
 {
   "layout": [
     {
-      "components": [],
+      "components": ["_Header"],
       "width": 12,
       "type": "main"
     }
   ],
   "settings": {
     "pageDisplayName": {
-      "en": {
+      "pt-BR": {
         "pageDisplayName": "Search Page"
+      }
+    },
+    "pageTitle": {
+      "pt-BR": {
+        "pageTitle": "Search Page"
       }
     }
   },
   "defaultPage": true,
   "address": "search",
   "title": "Search Page",
-  "shortName": "search",
-  "pageTypeDisplayName": {
-    "en": {
-      "pageTypeDisplayName": "search"
-    }
-  }
+  "shortName": "search"
 }

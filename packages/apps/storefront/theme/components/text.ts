@@ -25,6 +25,14 @@ export const Text: ComponentStyleConfig = {
     xl: {
       fontSize: 'xl',
       lineHeight: '5'
+    },
+    '2xl': {
+      fontSize: '2xl',
+      lineHeight: '8'
+    },
+    '2xs': {
+      fontSize: '2xs',
+      lineHeight: '3'
     }
   }
 };

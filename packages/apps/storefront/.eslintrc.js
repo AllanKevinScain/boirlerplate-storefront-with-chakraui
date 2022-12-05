@@ -21,7 +21,8 @@ module.exports = {
       alias: {
         map: [
           ['@core', 'storefront/src/core'],
-          ['@plugins', 'storefront/src/plugins']
+          ['@plugins', 'storefront/src/plugins'],
+          ['@storefront', 'storefront']
         ],
         extensions: ['.js', '.jsx', '.ts', '.tsx']
       }
@@ -41,7 +42,8 @@ module.exports = {
         tsx: 'never'
       }
     ],
-    'jsx-a11y/anchor-is-valid': 'off'
+    'jsx-a11y/anchor-is-valid': 'off',
+    'no-return-assign': 'off'
   },
   env: {
     node: true

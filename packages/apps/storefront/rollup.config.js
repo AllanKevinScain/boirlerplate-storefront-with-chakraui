@@ -1,28 +1,35 @@
+import commonjs from '@rollup/plugin-commonjs';
 const typescript = require('rollup-plugin-typescript2');
 const { createBuildConfigs } = require('@oracle-cx-commerce/rollup-config');
 
 const configs = createBuildConfigs({
   extraExternals: [
-    '@chakra-ui/react',
-    '@emotion/react',
-    '@emotion/styled',
-    'framer-motion',
-    'radash',
-    'yup',
-    'formik',
-    'swiper',
-    'date-fns',
-    'currency.js',
+    'rollup-plugin-typescript2',
     'increase-memory-limit',
-    '@choc-ui/chakra-autocomplete',
-    'html-react-parser'
+    'yup',
+    'swiper',
+    'radash',
+    'html-react-parser',
+    'framer-motion',
+    'formik',
+    'currency.js',
+    '@emotion/styled',
+    '@emotion/react',
+    '@chakra-ui/react',
+    '@choc-ui/chakra-autocomplete'
   ]
 }).map(config => ({
   ...config,
-  plugins: config.plugins.map(plugin => {
-    if (plugin.name === 'typescript') return typescript();
-    return plugin;
-  })
+  plugins: [
+    ...config.plugins.map(plugin => {
+      if (plugin.name === 'typescript') return typescript();
+      return plugin;
+    }),
+    commonjs({
+      include: /node_modules/,
+      requireReturnsDefault: 'auto' // <---- this solves default issue
+    })
+  ]
 }));
 
 module.exports = configs;

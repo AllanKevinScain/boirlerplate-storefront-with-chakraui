@@ -8,8 +8,13 @@
   ],
   "settings": {
     "pageDisplayName": {
-      "en": {
+      "pt-BR": {
         "pageDisplayName": "Help Page"
+      }
+    },
+    "pageTitle": {
+      "pt-BR": {
+        "pageTitle": "Help Page"
       }
     }
   },
@@ -17,10 +22,5 @@
   "address": "help",
   "allowCustomAddress": true,
   "title": "Help Page",
-  "shortName": "Article",
-  "pageTypeDisplayName": {
-    "en": {
-      "pageTypeDisplayName": "help"
-    }
-  }
+  "shortName": "Article"
 }

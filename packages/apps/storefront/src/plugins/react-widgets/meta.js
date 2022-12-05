@@ -3,5 +3,8 @@
  */
 
 /* Flag para o plop */
-export { default as WidgetTeste } from './widget-teste/meta';
+export { default as Banner } from './banner/meta';
+export { default as Carousel } from './carousel/meta';
+export { default as Header } from './header/meta';
+export { default as StorefrontShowcase } from './storefront-showcase/meta';
 export * from '@oracle-cx-commerce/react-widgets/meta';

@@ -1,27 +1,17 @@
 {
   "layout": [
     {
-      "components": [
-        "Error"
-      ],
+      "components": ["Error"],
       "width": 12,
       "type": "main"
     }
   ],
   "settings": {
-    "pageDisplayName": {
-      "en": {
-        "pageDisplayName": "Error 500 - Internal Server Error"
-      }
-    }
+    "pageDisplayName": {}
   },
   "defaultPage": true,
   "address": "500",
   "title": "Error 500 - Internal Server Error",
   "shortName": "500",
-  "pageTypeDisplayName": {
-    "en": {
-      "pageTypeDisplayName": "500"
-    }
-  }
+  "pageTypeDisplayName": {}
 }

@@ -1,25 +1,30 @@
 {
   "layout": [
     {
-      "components": ["_WidgetTeste"],
+      "components": ["_Header"],
+      "width": 12,
+      "type": "header"
+    },
+    {
+      "components": ["_BannerBlackFriday", "_MainCarousel", "_StorefrontMaisVendidos"],
       "width": 12,
       "type": "main"
     }
   ],
   "settings": {
     "pageDisplayName": {
-      "en": {
+      "pt-BR": {
         "pageDisplayName": "Homepage"
+      }
+    },
+    "pageTitle": {
+      "pt-BR": {
+        "pageTitle": "Homepage"
       }
     }
   },
   "defaultPage": true,
   "address": "home",
   "title": "Homepage",
-  "shortName": "home",
-  "pageTypeDisplayName": {
-    "en": {
-      "pageTypeDisplayName": "home"
-    }
-  }
+  "shortName": "home"
 }

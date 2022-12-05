@@ -1,25 +1,25 @@
 {
   "layout": [
     {
-      "components": [],
+      "components": ["_Header"],
       "width": 12,
       "type": "main"
     }
   ],
   "settings": {
     "pageDisplayName": {
-      "en": {
+      "pt-BR": {
         "pageDisplayName": "Category Page"
+      }
+    },
+    "pageTitle": {
+      "pt-BR": {
+        "pageTitle": "Category Page"
       }
     }
   },
   "defaultPage": true,
   "address": "category",
   "title": "Category Page",
-  "shortName": "category",
-  "pageTypeDisplayName": {
-    "en": {
-      "pageTypeDisplayName": "category"
-    }
-  }
+  "shortName": "category"
 }
