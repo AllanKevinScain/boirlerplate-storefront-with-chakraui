@@ -5,3 +5,4 @@
 *.config.js
 **/config/app-config
 **/__test__/expected-files/*
+**/public/**/*.css
