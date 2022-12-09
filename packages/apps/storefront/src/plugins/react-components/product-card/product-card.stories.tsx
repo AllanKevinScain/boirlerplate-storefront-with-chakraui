@@ -10,7 +10,7 @@ Cart.args = {
   displayName:
     'Smart TV Samsung 65" AU7700 4K UHD Crystal Tela sem limites Visual Livre de Cabos Controle Único Alexa Built In',
   id: '100038700',
-  primaryThumbImageURL: 'file/general/empty_product.png',
+  primaryThumbImageURL: 'file/products/000043.000043.jpg',
   salePrice: 874.44,
   listPrice: 0,
   cartQuantity: 1,
@@ -24,7 +24,7 @@ Analysis.args = {
   displayName:
     'Smart TV Samsung 65" AU7700 4K UHD Crystal Tela sem limites Visual Livre de Cabos Controle Único Alexa Built In',
   id: '100038700',
-  primaryThumbImageURL: 'file/general/empty_product.png',
+  primaryThumbImageURL: 'file/products/000043.000043.jpg',
   salePrice: 874.44,
   listPrice: 0,
   cartQuantity: 1,
