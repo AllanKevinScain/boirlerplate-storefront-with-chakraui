@@ -6,7 +6,6 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "declaration": false,
     "jsx": "react",
     "lib": [
       "ESNext",
@@ -34,7 +33,6 @@
   "exclude": [
     "**/docs/*",
     "**/node_modules/*",
-    "**/dist/*",
-    "**/*.stories.tsx"
+    "**/dist/*"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "@oracle-cx-commerce/workspace",
-  "version": "3.4.0",
+  "version": "3.7.0",
   "private": true,
   "scripts": {
     "stylelint": "stylelint **/*.css --ignore-disables",
@@ -53,15 +53,15 @@
     "generateW": "plop --plopfile=generators/widget.js"
   },
   "dependencies": {
-    "@oracle-cx-commerce/cli": "3.4.0"
+    "@oracle-cx-commerce/cli": "3.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.1",
     "@babel/preset-env": "^7.10.1",
     "@babel/preset-typescript": "^7.10.1",
-    "babel-plugin-module-resolver": "^4.1.0",
     "@commitlint/config-conventional": "^17.3.0",
-    "@oracle-cx-commerce/dev": "3.4.0",
+    "@oracle-cx-commerce/dev": "3.7.0",
+    "babel-plugin-module-resolver": "^4.1.0",
     "cross-env": "^5.0.5",
     "increase-memory-limit": "^1.0.3",
     "inquirer": "^9.1.4",

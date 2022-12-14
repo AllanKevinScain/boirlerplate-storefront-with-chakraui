@@ -12,8 +12,8 @@ module.exports = {
     return { type: 'add', path, templateFile };
   },
   updateArchive: (archiveWillGenrate, meta) => {
-    const indexTemplate = `export const {{camelizer componentName}} = () => import('./{{kebabler componentName}}');`;
-    const metaTemplate = `export { default as {{camelizer componentName}} } from './{{kebabler componentName}}/meta';`;
+    const indexTemplate = `export const _{{camelizer componentName}} = () => import('./{{kebabler componentName}}');`;
+    const metaTemplate = `export { default as _{{camelizer componentName}} } from './{{kebabler componentName}}/meta';`;
 
     const path = `../packages/apps/storefront/src/plugins/react-widgets/${archiveWillGenrate}`;
     const template = meta ? metaTemplate : indexTemplate;

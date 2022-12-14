@@ -10,7 +10,7 @@ export default {
   title: 'widgets/Banner',
   component: Banner,
   args: {
-    src: 'black-friday.png',
+    imageBanner: { src: 'black-friday.png' },
     height: '12',
     width: 'max',
     ulr: '/'

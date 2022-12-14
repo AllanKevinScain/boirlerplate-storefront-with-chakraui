@@ -48,6 +48,7 @@ export const StorefrontShowcaseWidget: React.FC<StorefrontShowcaseInterface> = p
               style={{
                 borderRadius: '2.5',
                 textAlign: 'unset',
+                maxWidth: '18.25rem',
                 ...generateShadow(1)
               }}
             >

@@ -1,4 +1,5 @@
 /* Flag para o plop */
+export * from './centering-component.type';
 export * from './component-teste.type';
 export * from './widget-teste.type';
 export * from './svg-image.type';
@@ -11,3 +12,4 @@ export * from './storefront.type';
 export * from './product-card.type';
 export * from './button-add.type';
 export * from './storefront-showcase.type';
+export * from './occ';

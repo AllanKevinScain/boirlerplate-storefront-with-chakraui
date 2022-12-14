@@ -1,69 +1,49 @@
-import React from 'react';
-import { Flex } from '@chakra-ui/react';
+import React, { useMemo } from 'react';
+import { useRecommendations } from '@plugins/hooks';
+import { CenteringComponent } from '@plugins/react-components';
+import { ProductCardInterface, StorefrontShowcaseInterface } from '@plugins/types';
 import { StorefrontShowcaseWidget } from './storefront-showcase';
 
-export default props => {
+type cutStorefrontShowcaseInterface = Omit<StorefrontShowcaseInterface, 'products'>;
+
+export default (props: cutStorefrontShowcaseInterface) => {
+  const { widgetId } = props;
+  const { recommendedProducts } = useRecommendations(widgetId);
+
+  const products = useMemo(() => {
+    const listProducts = recommendedProducts.map(item => {
+      const product: ProductCardInterface = {
+        displayName: item.displayName,
+        primaryFullImageURL: item.primaryFullImageURL,
+        route: item.route,
+        listPrice: item.listPrice,
+        salePrice: item.salePrice,
+        id: item.id,
+        parentCategory: item.parentCategory,
+        cartQuantity: 0,
+        percentageOff: 12,
+        isLaunch: false,
+        hasFavorite: false,
+        discountable: true,
+        coreProduct: false,
+        productCardType: 'showcase'
+      };
+
+      return product;
+    });
+
+    return listProducts;
+  }, [recommendedProducts]);
+
   return (
-    <Flex w="max" flexDir="column" margin="auto">
+    <CenteringComponent py="12">
       <StorefrontShowcaseWidget
         title="Descontos Especiais"
         contentViewCollection="Ver Todas"
         isViewCollectionVisible={true}
-        products={[
-          {
-            id: '100038700',
-            productCardType: 'showcase',
-            displayName: 'Geladeira/Refrigerador Brastemp Frost Free Evox 350Laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-            primaryThumbImageURL: 'file/products/000043.000043.jpg',
-            salePrice: 874.44,
-            cartQuantity: 1,
-            discountable: true,
-            percentageOff: 12,
-            isLaunch: true
-          },
-          {
-            id: '100038701',
-            productCardType: 'showcase',
-            displayName: 'Geladeira/Refrigerador Brastemp Frost Free Evox 350Laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-            primaryThumbImageURL: 'file/products/000043.000043.jpg',
-            salePrice: 874.44,
-            cartQuantity: 1,
-            discountable: true,
-            percentageOff: 12
-          },
-          {
-            id: '100038702',
-            productCardType: 'showcase',
-            displayName: 'Geladeira/Refrigerador Brastemp Frost Free Evox 350Laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-            primaryThumbImageURL: 'file/products/000043.000043.jpg',
-            salePrice: 874.44,
-            cartQuantity: 1,
-            discountable: true,
-            percentageOff: 12
-          },
-          {
-            id: '100038703',
-            productCardType: 'showcase',
-            displayName: 'Geladeira/Refrigerador Brastemp Frost Free Evox 350Laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-            primaryThumbImageURL: 'file/products/000043.000043.jpg',
-            salePrice: 874.44,
-            cartQuantity: 1,
-            discountable: true,
-            percentageOff: 12
-          },
-          {
-            id: '100038704',
-            productCardType: 'showcase',
-            displayName: 'Geladeira/Refrigerador Brastemp Frost Free Evox 350Laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-            primaryThumbImageURL: 'file/products/000043.000043.jpg',
-            salePrice: 874.44,
-            cartQuantity: 1,
-            discountable: true,
-            percentageOff: 12
-          }
-        ]}
+        products={products}
         {...props}
       />
-    </Flex>
+    </CenteringComponent>
   );
 };

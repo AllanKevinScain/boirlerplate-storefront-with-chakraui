@@ -10,7 +10,7 @@ Cart.args = {
   displayName:
     'Smart TV Samsung 65" AU7700 4K UHD Crystal Tela sem limites Visual Livre de Cabos Controle Único Alexa Built In',
   id: '100038700',
-  primaryThumbImageURL: 'file/products/000043.000043.jpg',
+  primaryFullImageURL: 'file/products/000043.000043.jpg',
   salePrice: 874.44,
   listPrice: 0,
   cartQuantity: 1,
@@ -24,7 +24,7 @@ Analysis.args = {
   displayName:
     'Smart TV Samsung 65" AU7700 4K UHD Crystal Tela sem limites Visual Livre de Cabos Controle Único Alexa Built In',
   id: '100038700',
-  primaryThumbImageURL: 'file/products/000043.000043.jpg',
+  primaryFullImageURL: 'file/products/000043.000043.jpg',
   salePrice: 874.44,
   listPrice: 0,
   cartQuantity: 1,
@@ -36,7 +36,7 @@ Showcase.args = {
   productCardType: 'showcase',
   displayName: 'Geladeira/Refrigerador Brastemp Frost Free Evox 350Laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
   id: '100038700',
-  primaryThumbImageURL: 'file/general/product_refrigerator.png',
+  primaryFullImageURL: 'file/general/product_refrigerator.png',
   salePrice: 874.44,
   listPrice: 0,
   cartQuantity: 1,
@@ -49,7 +49,7 @@ BuyTogether.args = {
   id: '100038700',
   productCardType: 'buyTogether',
   displayName: 'Smart Tv 43" UHD Samsung 4k AU7700 Processador Crystal 4k...',
-  primaryThumbImageURL: 'file/general/smart_tv.png',
+  primaryFullImageURL: 'file/general/smart_tv.png',
   salePrice: 3069.9,
   listPrice: 3376.89,
   cartQuantity: 1

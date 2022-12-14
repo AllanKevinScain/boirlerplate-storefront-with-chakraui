@@ -5,7 +5,7 @@ import { ProductProperties } from '@plugins/types';
 import { toCurrency, truncate } from '@plugins/helpers';
 
 export const BuyTogetherProduct: React.FC<ProductProperties> = props => {
-  const { displayName, id, salePrice, listPrice = 0, primaryThumbImageURL } = props;
+  const { displayName, id, salePrice, listPrice = 0, primaryFullImageURL } = props;
 
   return (
     <Stack
@@ -22,7 +22,7 @@ export const BuyTogetherProduct: React.FC<ProductProperties> = props => {
       borderRadius="0.25rem"
       {...generateShadow(0)}
     >
-      <Image h="50" objectFit="contain" src={primaryThumbImageURL} />
+      <Image h="50" objectFit="contain" src={primaryFullImageURL} />
       <Link fontSize="md" fontWeight="600">
         {truncate({ content: displayName, capit: 52 })}
       </Link>

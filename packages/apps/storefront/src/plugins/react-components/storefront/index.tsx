@@ -23,7 +23,6 @@ export const Storefront: React.FC<StorefrontInterface> = props => {
     },
     looping = false,
     height = '105.5',
-
     isArrowLeftVisible = true
   } = props;
 

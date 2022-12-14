@@ -98,7 +98,8 @@ export const CarouselWidget: React.FC<CarouselInterface> = props => {
           slideRole: 'grupo'
         }}
         style={{
-          width: '100%'
+          width: '100%',
+          maxHeight: '24.375rem'
         }}
         className="mySwiper"
       >

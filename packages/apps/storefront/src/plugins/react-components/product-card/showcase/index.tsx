@@ -9,7 +9,7 @@ export const ShowcaseProduct: React.FC<ProductProperties> = props => {
   const {
     displayName,
     salePrice,
-    primaryThumbImageURL,
+    primaryFullImageURL,
     percentageOff = 0,
     listPrice = 0,
     route = '/',
@@ -81,8 +81,8 @@ export const ShowcaseProduct: React.FC<ProductProperties> = props => {
           </Tag>
         )}
 
-        <Stack flexDir="row" spacing="0" gap="0" justify="center" pt={isLaunch ? '' : '6'}>
-          <Image src={primaryThumbImageURL} h="50" />
+        <Stack flexDir="row" spacing="0" gap="0" justify="center" pt={isLaunch ? '' : '6'} pb="6">
+          <Image src={primaryFullImageURL} h="42" />
         </Stack>
 
         <Stack flexDir="row" spacing="0" gap="0">
@@ -101,7 +101,7 @@ export const ShowcaseProduct: React.FC<ProductProperties> = props => {
         </Stack>
 
         <Stack flexDir="column" spacing="0" gap="0">
-          <Text fontWeight="500" variant="md" mt="1">
+          <Text fontWeight="500" variant="md" mt="1" h="10">
             {truncate({ content: displayName, capit: 52 })}
           </Text>
           <Stack flexDir="row" spacing="0" py="1" gap="1.5" align="center">
@@ -115,11 +115,12 @@ export const ShowcaseProduct: React.FC<ProductProperties> = props => {
               ( 12 )
             </Text>
           </Stack>
-          <Text fontWeight="500" variant="sm" color="blackAlpha.600" textDecoration="line-through">
-            de {toCurrency(listPrice).format()}
+
+          <Text fontWeight="500" variant="sm" color="blackAlpha.600" textDecoration="line-through" h="5">
+            {salePrice && `de ${toCurrency(listPrice).format()}`}
           </Text>
           <Text fontWeight="700" variant="2xl" color="blue.600">
-            {toCurrency(salePrice).format()}
+            {toCurrency(salePrice ? salePrice : listPrice).format()}
           </Text>
           <Text fontWeight="400" variant="sm" color="blackAlpha.500">
             ou em até <chakra.span fontWeight="700">10x</chakra.span> de&nbsp;

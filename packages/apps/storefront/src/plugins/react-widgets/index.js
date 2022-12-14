@@ -4,7 +4,7 @@
 
 export * from '@oracle-cx-commerce/react-widgets';
 /* Flag para o plop */
-export const Header = () => import('./header');
-export const Banner = () => import('./banner');
-export const Carousel = () => import('./carousel');
-export const StorefrontShowcase = () => import('./storefront-showcase');
+export const _Header = () => import('./header');
+export const _Banner = () => import('./banner');
+export const _Carousel = () => import('./carousel');
+export const _StorefrontShowcase = () => import('./storefront-showcase');

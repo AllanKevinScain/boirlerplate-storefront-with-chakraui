@@ -5,7 +5,7 @@ import { ProductProperties } from '@plugins/types';
 import { SvgImage } from '@plugins/react-components';
 
 export const AnalysisProduct: React.FC<ProductProperties> = props => {
-  const { displayName, id, primaryThumbImageURL, discountable = false, coreProduct = true } = props;
+  const { displayName, id, primaryFullImageURL, discountable = false, coreProduct = true } = props;
 
   return (
     <Stack
@@ -22,7 +22,7 @@ export const AnalysisProduct: React.FC<ProductProperties> = props => {
       {...generateShadow(0)}
     >
       {/* ThumbNail */}
-      <Image maxW="15.5" objectFit="contain" src={primaryThumbImageURL} />
+      <Image maxW="15.5" objectFit="contain" src={primaryFullImageURL} />
 
       <Stack flexDir="column" h="full" gap="0" spacing="0.5" w="full" justify="space-evenly">
         {/* Nome do produto */}

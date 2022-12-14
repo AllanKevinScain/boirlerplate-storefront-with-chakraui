@@ -1,0 +1,7 @@
+{
+  "imageBanner": { "src": "bannerprincipal.png" },
+  "height": "100%",
+  "width": "max",
+  "hasAnimation": true,
+  "url": "/"
+}

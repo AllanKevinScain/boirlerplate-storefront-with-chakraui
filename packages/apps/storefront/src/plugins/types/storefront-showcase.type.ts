@@ -5,6 +5,7 @@ interface StorefrontShowcaseInterface {
   title: string;
   contentViewCollection?: string;
   isViewCollectionVisible?: boolean;
+  widgetId?: string;
 }
 
 export type { StorefrontShowcaseInterface };

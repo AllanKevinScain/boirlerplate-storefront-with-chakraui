@@ -1,7 +1,7 @@
 interface BannerInterface {
   width: string;
   height: string;
-  src: string;
+  imageBanner: { src: string };
   url?: string;
   hasAnimation?: boolean;
 }

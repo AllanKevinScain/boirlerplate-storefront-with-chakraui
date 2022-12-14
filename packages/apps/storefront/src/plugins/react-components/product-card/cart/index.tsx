@@ -9,7 +9,7 @@ export const CartProduct: React.FC<ProductProperties> = props => {
   const {
     displayName,
     id,
-    primaryThumbImageURL,
+    primaryFullImageURL,
     salePrice,
     cartQuantity,
     discountable = false,
@@ -33,7 +33,7 @@ export const CartProduct: React.FC<ProductProperties> = props => {
       {...generateShadow(0)}
     >
       {/* ThumbNail */}
-      <Image maxW="15.5" objectFit="contain" src={primaryThumbImageURL} />
+      <Image maxW="15.5" objectFit="contain" src={primaryFullImageURL} />
 
       {/* Principais informações, nome cod, preços */}
       <Stack flexDir="column" gap="0" spacing="2" w="full">

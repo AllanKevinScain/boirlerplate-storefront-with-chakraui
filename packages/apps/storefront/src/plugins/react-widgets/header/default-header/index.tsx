@@ -18,7 +18,7 @@ export const DefaultHeader: React.FC<DefaultHeaderProperties> = props => {
 
   const { internalBannerImage, navigableCollections } = props;
 
-  const Icon = (props: { children: React.ReactNode; onClick: () => void }) => {
+  const Icon: React.FC<{ children: React.ReactNode; onClick: () => void }> = props => {
     return (
       <Stack
         as="button"
