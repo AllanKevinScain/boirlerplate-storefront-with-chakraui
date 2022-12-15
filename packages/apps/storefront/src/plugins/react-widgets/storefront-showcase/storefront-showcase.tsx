@@ -4,7 +4,7 @@ import { SwiperSlide } from 'swiper/react';
 import { Button, Heading, Stack } from '@chakra-ui/react';
 import { ProductCard, Storefront, SvgImage } from '@plugins/react-components';
 import { StorefrontShowcaseInterface } from '@plugins/types';
-import { generateShadow } from '@storefront/theme/shadows';
+import { generateShadow } from '../../../../theme/shadows';
 
 export const StorefrontShowcaseWidget: React.FC<StorefrontShowcaseInterface> = props => {
   const { products = [], title = '', contentViewCollection = 'Ver Todas', isViewCollectionVisible = true } = props;

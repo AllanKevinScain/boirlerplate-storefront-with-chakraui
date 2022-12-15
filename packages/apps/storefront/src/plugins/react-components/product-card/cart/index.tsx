@@ -1,9 +1,9 @@
 import React from 'react';
 import { Checkbox, Flex, Image, Link, Stack, Text } from '@chakra-ui/react';
-import { generateShadow } from '@storefront/theme/shadows';
 import { toCurrency } from '@plugins/helpers';
 import { ProductProperties } from '@plugins/types';
 import { ButtonAdd, SvgImage } from '@plugins/react-components';
+import { generateShadow } from '../../../../../theme/shadows';
 
 export const CartProduct: React.FC<ProductProperties> = props => {
   const {

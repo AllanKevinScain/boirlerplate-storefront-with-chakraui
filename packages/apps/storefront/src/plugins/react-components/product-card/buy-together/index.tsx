@@ -1,8 +1,8 @@
 import React from 'react';
 import { Image, Link, Stack, Text } from '@chakra-ui/react';
-import { generateShadow } from '@storefront/theme/shadows';
 import { ProductProperties } from '@plugins/types';
 import { toCurrency, truncate } from '@plugins/helpers';
+import { generateShadow } from '../../../../../theme/shadows';
 
 export const BuyTogetherProduct: React.FC<ProductProperties> = props => {
   const { displayName, id, salePrice, listPrice = 0, primaryFullImageURL } = props;

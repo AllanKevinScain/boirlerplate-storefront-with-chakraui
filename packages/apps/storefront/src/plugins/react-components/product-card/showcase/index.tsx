@@ -1,9 +1,9 @@
 import React from 'react';
 import { chakra, IconButton, Image, Link, Stack, Tag, Text } from '@chakra-ui/react';
 import { SvgImage } from '@plugins/react-components';
-import { generateShadow } from '@storefront/theme/shadows';
 import { toCurrency, truncate } from '@plugins/helpers';
 import { ProductProperties } from '@plugins/types';
+import { generateShadow } from '../../../../../theme/shadows';
 
 export const ShowcaseProduct: React.FC<ProductProperties> = props => {
   const {

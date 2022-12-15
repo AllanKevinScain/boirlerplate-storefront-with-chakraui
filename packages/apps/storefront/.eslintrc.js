@@ -21,8 +21,7 @@ module.exports = {
       alias: {
         map: [
           ['@core', 'storefront/src/core'],
-          ['@plugins', 'storefront/src/plugins'],
-          ['@storefront', 'storefront']
+          ['@plugins', 'storefront/src/plugins']
         ],
         extensions: ['.js', '.jsx', '.ts', '.tsx']
       }

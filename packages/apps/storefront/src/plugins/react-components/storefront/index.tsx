@@ -5,9 +5,9 @@ import { Swiper } from 'swiper/react';
 // eslint-disable-next-line import/no-unresolved
 import SwiperClass from 'swiper/types/swiper-class';
 import { Flex, Stack } from '@chakra-ui/react';
-import { generateShadow } from '@storefront/theme/shadows';
 import { StorefrontInterface } from '@plugins/types';
 import { SvgImage } from '@plugins/react-components';
+import { generateShadow } from '../../../../theme/shadows';
 
 /* Módulos */
 SwiperCore.use([Mousewheel, A11y]);

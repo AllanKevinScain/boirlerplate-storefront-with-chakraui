@@ -1,8 +1,8 @@
 import React from 'react';
 import { Image, Link, Stack, Text } from '@chakra-ui/react';
-import { generateShadow } from '@storefront/theme/shadows';
 import { ProductProperties } from '@plugins/types';
 import { SvgImage } from '@plugins/react-components';
+import { generateShadow } from '../../../../../theme/shadows';
 
 export const AnalysisProduct: React.FC<ProductProperties> = props => {
   const { displayName, id, primaryFullImageURL, discountable = false, coreProduct = true } = props;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Component, { fetchers as defaultFetchers } from '@oracle-cx-commerce/react-widgets/root/component';
 import { ChakraProvider } from '@chakra-ui/react';
-import { theme } from '@storefront/theme';
+import { theme } from '../../../../theme';
 
 /**
  * Root component.

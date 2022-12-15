@@ -56,10 +56,7 @@
     "@oracle-cx-commerce/cli": "3.7.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.1",
-    "@babel/preset-env": "^7.10.1",
-    "@babel/preset-typescript": "^7.10.1",
-    "@commitlint/config-conventional": "^17.3.0",
+    "@commitlint/config-conventional": "^16.0.0",
     "@oracle-cx-commerce/dev": "3.7.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "cross-env": "^5.0.5",
