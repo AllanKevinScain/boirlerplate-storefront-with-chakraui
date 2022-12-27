@@ -15,7 +15,6 @@
     "@oracle-cx-commerce/react-widgets": "3.4.0",
     "@oracle-cx-commerce/styles": "3.4.0",
     "@oracle-cx-commerce/subscribers": "3.4.0",
-    "@rollup/plugin-commonjs": "20.0.0",
     "framer-motion": "^8.0.2"
   },
   "devDependencies": {
