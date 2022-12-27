@@ -14,7 +14,8 @@ module.exports = {
       {
         alias: {
           '@core': 'storefront/src/core',
-          '@plugins': 'storefront/src/plugins'
+          '@plugins': 'storefront/src/plugins',
+          '@storefront': 'storefront'
         }
       }
     ]

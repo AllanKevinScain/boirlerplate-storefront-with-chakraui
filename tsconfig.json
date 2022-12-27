@@ -18,6 +18,9 @@
       ],
       "@plugins/*": [
         "packages/apps/storefront/src/plugins/*"
+      ],
+      "@storefront": [
+        "packages/apps/storefront/*"
       ]
     },
     "allowJs": true,
