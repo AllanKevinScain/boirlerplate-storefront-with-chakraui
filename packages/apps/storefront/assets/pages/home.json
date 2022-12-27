@@ -1,14 +1,9 @@
 {
   "layout": [
     {
-      "components": ["_Header"],
+      "components": ["_Hello"],
       "width": 12,
       "type": "header"
-    },
-    {
-      "components": ["_BannerBlackFriday", "_MainCarousel", "_StorefrontMaisVendidos"],
-      "width": 12,
-      "type": "main"
     }
   ],
   "settings": {

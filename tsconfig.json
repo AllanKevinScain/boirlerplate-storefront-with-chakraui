@@ -19,7 +19,7 @@
       "@plugins/*": [
         "packages/apps/storefront/src/plugins/*"
       ],
-      "@storefront": [
+      "@storefront/*": [
         "packages/apps/storefront/*"
       ]
     },

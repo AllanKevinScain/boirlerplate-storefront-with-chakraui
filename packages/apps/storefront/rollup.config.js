@@ -3,23 +3,7 @@ const typescript = require('rollup-plugin-typescript2');
 const { createBuildConfigs } = require('@oracle-cx-commerce/rollup-config');
 
 const configs = createBuildConfigs({
-  extraExternals: [
-    'rollup-plugin-typescript2',
-    'increase-memory-limit',
-    'yup',
-    'swiper',
-    'radash',
-    'html-react-parser',
-    'framer-motion',
-    'formik',
-    'currency.js',
-    '@emotion/styled',
-    '@emotion/react',
-    '@chakra-ui/react',
-    '@choc-ui/chakra-autocomplete',
-    'babel-plugin-module-resolver',
-    '@types/react'
-  ]
+  extraExternals: ['framer-motion', '@emotion/styled', '@emotion/react', '@chakra-ui/react']
 }).map(config => ({
   ...config,
   plugins: [

@@ -4,10 +4,9 @@
   "private": true,
   "description": "Open Storefront Framework Application",
   "dependencies": {
-    "@chakra-ui/react": "1.7.3",
-    "@choc-ui/chakra-autocomplete": "4.20.0",
-    "@emotion/react": "11",
-    "@emotion/styled": "11",
+    "@chakra-ui/react": "^1.8.9",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@oracle-cx-commerce/actions": "3.4.0",
     "@oracle-cx-commerce/commerce-utils": "3.4.0",
     "@oracle-cx-commerce/endpoints": "3.4.0",
@@ -17,14 +16,7 @@
     "@oracle-cx-commerce/styles": "3.4.0",
     "@oracle-cx-commerce/subscribers": "3.4.0",
     "@rollup/plugin-commonjs": "20.0.0",
-    "@types/react": "^18.0.26",
-    "currency.js": "^2.0.4",
-    "formik": "^2.2.9",
-    "framer-motion": "4",
-    "html-react-parser": "^3.0.4",
-    "radash": "^8.0.0-rc.1",
-    "swiper": "^6.5.1",
-    "yup": "^0.32.11"
+    "framer-motion": "^8.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",

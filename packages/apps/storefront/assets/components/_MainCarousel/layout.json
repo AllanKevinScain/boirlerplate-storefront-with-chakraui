@@ -1,9 +1,0 @@
-{
-  "regions": [
-    {
-      "components": ["_BannerCarousel1", "_BannerCarousel2"],
-      "width": 12,
-      "type": "main"
-    }
-  ]
-}
